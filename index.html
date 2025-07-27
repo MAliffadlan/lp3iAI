@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LP3I AI - Responsive</title>
+    <title>LP3I AI</title>
 <meta property="og:image" content="https://lp3iai.netlify.app/asset/background.jpg" />
 <meta property="og:title" content="LP3I AI - Asisten Informasi Kampus (Beta)" />
 <meta property="og:description" content="Tanyakan apa saja seputar Kampus LP3I! Ditenagai oleh AI dengan respons super cepat." />
@@ -26,6 +26,7 @@
 
         html {
             scroll-behavior: smooth;
+            overflow-x: hidden
         }
 
         body {
@@ -208,7 +209,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 0 20px;
+            padding: 0 0px;
             position: relative;
             z-index: 1;
         }
@@ -325,14 +326,24 @@
             transform: translateY(20px);
             transition: opacity 0.6s ease, transform 0.6s ease;
         }
-
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
         .about-image {
-            width: 100%;
-            height: 350px;
-            background: linear-gradient(135deg, #0ff, #a0f);
-            border-radius: 15px;
+           width: 100%;
+    height: auto;
+    max-height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
         }
-        
+        @media (max-width: 768px) {
+    .about-image {
+        max-width: 80%;  /* Kecilin lebar max di mobile */
+        margin: 0 auto;  /* Tengah-kan */
+    }
+}
         .about-text p {
             margin-bottom: 1rem;
             color: #ccc;
@@ -396,9 +407,12 @@
         /* ========== RESPONSIVE DESIGN (MEDIA QUERIES) ========== */
         @media (max-width: 768px) {
             .hamburger {
-                display: block; /* Show hamburger on mobile */
+                display: block;
+                 /* Show hamburger on mobile */
             }
 
+            
+            
             .nav-links {
                 position: fixed;
                 top: 0;
@@ -537,7 +551,7 @@
                     <p>LP3I AI adalah sebuah inisiatif untuk mengintegrasikan kecerdasan buatan dalam ekosistem pendidikan Politeknik LP3I. Tujuan kami adalah untuk mempermudah akses informasi bagi mahasiswa, calon mahasiswa, dan staf.</p>
                     <p>Dengan memanfaatkan teknologi AI terkini, kami berharap dapat menciptakan pengalaman yang lebih efisien, interaktif, dan informatif bagi seluruh komunitas LP3I.</p>
                 </div>
-                <div class="about-image"></div>
+                <img src="/asset/background.jpg" alt="Italian Trulli">
             </div>
         </div>
     </section>
