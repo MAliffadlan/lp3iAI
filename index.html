@@ -11,13 +11,13 @@
 <meta property="og:type" content="website" />
 
 
-    <!-- Google Font -->
+   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <!-- Font Awesome for Icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <style>
-        /* ========== Reset & Basics ========== */
+       
         * {
             margin: 0;
             padding: 0;
@@ -42,7 +42,7 @@
             padding: 0 20px;
         }
 
-        /* ========== INTRO SPLASH ========== */
+       
         #intro {
             position: fixed;
             top: 0;
@@ -85,7 +85,7 @@
             }
         }
 
-        /* ========== Aurora Effect ========== */
+        
         .aurora {
             position: fixed;
             top: 0;
@@ -137,7 +137,7 @@
             100% { transform: translateY(-50%) rotate(0deg); }
         }
 
-        /* ========== Navbar ========== */
+        
         .navbar {
             position: fixed;
             top: 0;
@@ -162,7 +162,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            z-index: 101; /* Ensure logo is above mobile nav */
+            z-index: 101; 
         }
 
         .nav-links a {
@@ -188,7 +188,7 @@
         }
 
         .hamburger {
-            display: none; /* Hidden on desktop */
+            display: none; 
             cursor: pointer;
             z-index: 101;
         }
@@ -202,7 +202,7 @@
             transition: all 0.3s ease-in-out;
         }
 
-        /* ========== Hero ========== */
+       
         .hero {
             min-height: 100vh;
             display: flex;
@@ -279,7 +279,7 @@
             transition: opacity 0.6s ease, transform 0.6s ease;
         }
 
-        /* ========== Features ========== */
+       
         #features {
             background: rgba(0, 0, 0, 0.5);
         }
@@ -312,7 +312,7 @@
             color: #0ff;
         }
 
-        /* ========== About ========== */
+        
         .about-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -340,8 +340,8 @@ img {
         }
         @media (max-width: 768px) {
     .about-image {
-        max-width: 80%;  /* Kecilin lebar max di mobile */
-        margin: 0 auto;  /* Tengah-kan */
+        max-width: 80%; 
+        margin: 0 auto;  
     }
 }
         .about-text p {
@@ -349,7 +349,7 @@ img {
             color: #ccc;
         }
 
-        /* ========== Contact ========== */
+      
         #contact {
             background: rgba(0, 0, 0, 0.5);
         }
@@ -396,7 +396,7 @@ img {
         }
 
 
-        /* ========== Footer ========== */
+       
         .footer {
             text-align: center;
             padding: 40px 20px;
@@ -404,11 +404,11 @@ img {
             color: #aaa;
         }
 
-        /* ========== RESPONSIVE DESIGN (MEDIA QUERIES) ========== */
+        
         @media (max-width: 768px) {
             .hamburger {
                 display: block;
-                 /* Show hamburger on mobile */
+                 
             }
 
             
@@ -425,13 +425,13 @@ img {
                 height: auto;
                 align-items: center;
                 padding: 80px 20px 30px;
-                transform: translateY(-110%); /* Hide above screen */
+                transform: translateY(-110%); 
                 transition: transform 0.4s ease-in-out;
-                z-index: 99; /* Place below navbar */
+                z-index: 99; 
             }
 
             .nav-links.active {
-                transform: translateY(0); /* Slide down into view */
+                transform: translateY(0); 
             }
 
             .nav-links a {
@@ -452,11 +452,11 @@ img {
             }
 
             .hero-title {
-                font-size: 2.2rem; /* Smaller title on mobile */
+                font-size: 2.2rem; 
             }
 
             .hero-subtitle {
-                font-size: 1rem; /* Smaller subtitle on mobile */
+                font-size: 1rem; 
             }
             
             .section-title {
@@ -464,13 +464,13 @@ img {
             }
 
             .about-container {
-                grid-template-columns: 1fr; /* Stack columns vertically */
+                grid-template-columns: 1fr; 
                 text-align: center;
             }
             
             .about-image {
                 height: 250px;
-                order: -1; /* Move image above text */
+                order: -1; 
             }
         }
     </style>
@@ -481,7 +481,6 @@ img {
         <div class="intro-logo">LP3I AI</div>
     </div>
 
-    
     <div class="aurora">
         <span></span>
         <span></span>
@@ -489,7 +488,6 @@ img {
         <span></span>
     </div>
 
-    <!-- ❸ Navbar -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="logo" >LP3I AI</div>
@@ -507,7 +505,6 @@ img {
         </div>
     </header>
 
-    <!-- ❹ Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-container">
             <h1 class="hero-title">Permudah penjelajahan informasi kampus LP3I menggunakan solusi AI</h1>
@@ -518,7 +515,6 @@ img {
         </div>
     </section>
 
-    <!-- ❺ Features Section -->
     <section id="features">
         <div class="container">
             <h2 class="section-title">Fitur Unggulan</h2>
@@ -542,7 +538,6 @@ img {
         </div>
     </section>
     
-    <!-- ❻ About Section -->
     <section id="about">
         <div class="container">
             <div class="about-container">
@@ -567,15 +562,13 @@ img {
             </div>
         </div>
     </section>
-
-
    <section id="contact">
     <div class="container">
         <div class="contact-container">
             <h2 class="section-title">Hubungi Kami</h2>
             <p style="margin-bottom: 2rem; color: #ccc;">Punya pertanyaan atau masukan? Jangan ragu untuk menghubungi kami.</p>
-            <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify>  <!-- Tambah name & data-netlify -->
-                <input type="hidden" name="form-name" value="contact">  <!-- Honeypot opsional & hidden field -->
+            <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify>  
+                <input type="hidden" name="form-name" value="contact">  
                 <input type="text" name="name" placeholder="Nama Anda" required>
                 <input type="email" name="email" placeholder="Email Anda" required>
                 <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
